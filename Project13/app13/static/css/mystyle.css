@@ -1,0 +1,33 @@
+
+#_title
+{
+    font-size: 45px;
+    color: orangered;
+    /*text-shadow: yellow 5px 5px 1px;*/
+}
+
+#login_title
+{
+    font-size: 20px;
+    color: blue;
+}
+
+#forgotpassword
+{
+    background-color: orangered;
+    color: white;
+    border-radius: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#newuser
+{
+    background-color: #28a7ff;
+    color: #000000;
+    border-radius: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}

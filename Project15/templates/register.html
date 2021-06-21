@@ -1,6 +1,10 @@
 
 {% extends 'common.html' %}
 
+{% block menu %}
+    {% include 'main_menu.html' %}
+{% endblock %}
+
 {% block content %}
 
  <form action="{% url 'register' %}" method="post">
@@ -88,7 +92,5 @@
 
     </table>
  </form>
-
-
 
 {% endblock %}

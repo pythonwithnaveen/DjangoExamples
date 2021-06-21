@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from app15.models import Registration
 
 
@@ -25,4 +24,15 @@ def showRegisterPage(request):
 
 
 def showLoginPage(request):
-    return render(request,"login.html")
+    if request.method == "GET":
+        return render(request,"login.html")
+    else:
+        em = request.POST.get("email")
+        pas = request.POST.get("password")
+
+        try:
+            stu_obj = Registration.objects.get(email=em,password=pas)
+            return render(request,"welcome.html")
+        except Registration.DoesNotExist:
+            return render(request,"login.html",{"error_message":"Invalid User"})
+

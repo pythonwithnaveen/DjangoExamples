@@ -1,6 +1,10 @@
 
 {% extends 'common.html' %}
 
+{% block menu %}
+    {% include 'main_menu.html' %}
+{% endblock %}
+
 {% block content %}
     {% load static %}
         <img src="{% static 'images/FREE-ONLINE-TRAINING-14.png'%}" width="80%">

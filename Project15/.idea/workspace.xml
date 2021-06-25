@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a98068f-7675-460b-901c-7719b73f69a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app15/static/css/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/app15/static/css/mystyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app15/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app15/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sathya.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/sathya.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-    </list>
+    <list default="true" id="5a98068f-7675-460b-901c-7719b73f69a2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +48,7 @@
     <session id="-897244660">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="1" />
@@ -103,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/templates/common.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="197">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="35" selection-end-column="9" />
+              <caret line="35" column="9" selection-start-line="29" selection-start-column="4" selection-end-line="35" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -120,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="231">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="n#form#0;n#!!top" />
               </folding>
@@ -151,7 +142,7 @@
         <entry file="file://$PROJECT_DIR$/templates/user_menu.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -160,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -240,6 +231,12 @@
               <item name="Project15" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project15" type="462c0819:PsiDirectoryNode" />
               <item name="app15" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project15" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project15" type="462c0819:PsiDirectoryNode" />
+              <item name="app15" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project15" type="b2602c69:ProjectViewProjectNode" />
@@ -359,7 +356,7 @@
     <frame x="-7" y="-7" width="1107" height="602" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19484241" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18051577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.32978722" />
@@ -505,14 +502,14 @@
     <entry file="file://$PROJECT_DIR$/templates/common.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="35" selection-end-column="9" />
+          <caret line="35" column="9" selection-start-line="29" selection-start-column="4" selection-end-line="35" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -526,7 +523,7 @@
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -542,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="231">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="n#form#0;n#!!top" />
           </folding>

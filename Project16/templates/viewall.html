@@ -1,0 +1,28 @@
+
+<html>
+    <body>
+            <table align="center" border="2">
+                <tr>
+                    <th>
+                        All Products Information
+                    </th>
+                </tr>
+
+                {% for product in all_products %}
+                    <tr>
+                        <th>
+                            <img src="{{ product.photo.url }}" width="200" height="300">
+                        </th>
+                        <th>{{ product.number }}</th>
+                    </tr>
+                    <tr>
+                        <th>{{ product.name }}</th>
+                    </tr>
+                     <tr>
+                        <th>{{ product.price }}</th>
+                    </tr>
+                {% endfor %}
+
+            </table>
+    </body>
+</html>

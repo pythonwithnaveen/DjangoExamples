@@ -1,0 +1,47 @@
+
+
+<html>
+<body>
+<form action="{% url 'main' %}" method="post">
+    {% csrf_token %}
+
+    <table align="center" border="2">
+        <tr>
+            <th>
+                <a href="{% url 'main' %}">Employee
+                </a>
+            </th>
+            <th>
+                <a href="{% url 'account' %}">
+                Account
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                Employee Page
+            </th>
+        </tr>
+        {{ eform }}
+        <tr>
+            <th>
+                <button type="submit">Save</button>
+            </th>
+        </tr>
+    </table>
+</form>
+
+<table align="center" border="2">
+    <tr>
+        <th>Employee IDNO</th>
+        <th>Employee NAME</th>
+    </tr>
+    {% for employee in e_data %}
+        <tr>
+            <th>{{ employee.idno }}</th>
+            <th>{{ employee.name }}</th>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

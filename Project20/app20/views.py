@@ -26,3 +26,11 @@ def showStudent(request):
         else:
             return render(request, "studnet.html", {"error": "Please Add Course"})
 
+
+
+def foo():
+    all_students = StudentModel.objects.all()
+    for student in all_students:
+        all_course = student.course.all()
+        for course in all_course:
+            course.course_fee

@@ -1,0 +1,81 @@
+
+
+<html>
+<body>
+<form action="{% url 'account' %}" method="post">
+    {% csrf_token %}
+
+    <table align="center" border="2">
+        <tr>
+            <th>
+                <a href="{% url 'main' %}">Employee
+                </a>
+            </th>
+            <th>
+                <a href="{% url 'account' %}">
+                Account
+                </a>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                Bank Account Page
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                {{ aform.account_number.label }}
+            </th>
+            <th>
+                {{ aform.account_number }}
+            </th>
+            <th>
+                {{ aform.account_number.error }}
+
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                Employee Name
+            </th>
+            <th>
+                <select>
+                    {% for x in aform.employee %}
+                        <option>{{ x }}</option>
+                    {% endfor %}
+                </select>
+            </th>
+            <th>
+                {{ aform.employee.error }}
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <button type="submit">Save</button>
+            </th>
+        </tr>
+{#        <tr>#}
+{#            <th>#}
+{#                {{ aform.errors }}#}
+{#            </th>#}
+{#        </tr>#}
+    </table>
+</form>
+
+<table align="center" border="2">
+    <tr>
+        <th>Account Number </th>
+        <th>Employee</th>
+    </tr>
+    {% for account in a_data %}
+        <tr>
+            <th>{{ account.account_number }}</th>
+            <th>{{ account.employee.name }}</th>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

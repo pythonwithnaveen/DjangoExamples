@@ -1,0 +1,15 @@
+
+
+<form action="{% url 'save' %}" method="post">
+    {% csrf_token %}
+    <input type="password" placeholder="Password" name="p1">
+    <button type="submit">Submit</button>
+</form>
+<br>
+<br>
+<br>
+<br>
+<form action="{% url 'save' %}" method="get">
+    <input type="password" placeholder="Password" name="p2">
+    <button type="submit">Submit</button>
+</form>

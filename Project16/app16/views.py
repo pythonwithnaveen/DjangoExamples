@@ -15,4 +15,20 @@ def openMainPage(request):
 
 def viewall(request):
     products_list = ProductModel.objects.all()
-    return render(request,"viewall.html",{"all_products":products_list})
+
+    total_cookies = len(request.COOKIES)
+
+    return render(request,"viewall.html",{"all_products":products_list,"cookie":total_cookies})
+
+
+def save_cookie(request):
+    product_number = request.GET.get("pno")
+    product_name = request.GET.get("pname")
+
+    response = redirect('view_all')
+    response.set_cookie(product_number,product_name)
+    return response
+
+
+
+

@@ -9,8 +9,6 @@ class EmployeeForm(forms.ModelForm):
 
 
 class AccountForm(forms.ModelForm):
-
-
     class Meta:
         model = AccountModel
         fields = "__all__"

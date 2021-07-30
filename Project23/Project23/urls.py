@@ -1,4 +1,4 @@
-"""Project16 URL Configuration
+"""Project23 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -13,19 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from app16 import views
-from Project16 import settings
+
+from app23 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.openMainPage,name='main'),
-    path('view_all/',views.viewall,name='view_all'),
-    path('save_cookie/',views.save_cookie,name='save_cookie'),
+
+    path('',views.showIndex,name='main'),
+    path('save/',views.save,name='save'),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-

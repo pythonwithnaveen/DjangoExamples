@@ -16,7 +16,10 @@ def openMainPage(request):
 def viewall(request):
     products_list = ProductModel.objects.all()
 
-    total_cookies = len(request.COOKIES)
+    if request.COOKIES.get("csrftoken"):
+        total_cookies = len(request.COOKIES) - 1
+    else:
+        total_cookies = len(request.COOKIES)
 
     return render(request,"viewall.html",{"all_products":products_list,"cookie":total_cookies})
 

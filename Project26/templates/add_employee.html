@@ -1,0 +1,22 @@
+{% include 'common.html' %}
+
+{% block content %}
+    {% load static %}
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table class="table">
+        <tr>
+            <th>
+                Employee Registration Page
+            </th>
+        </tr>
+        {{ form }}
+        <tr>
+            <th>
+                <button type="submit" class="btn-primary">Save</button>
+            </th>
+        </tr>
+    </table>
+    </form>
+
+{% endblock %}

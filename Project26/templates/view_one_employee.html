@@ -1,0 +1,15 @@
+
+{% extends 'common.html' %}
+
+{% block content %}
+    {% load static %}
+
+    <table>
+        <tr><th> Employee Idno : </th> <th>{{ object.idno }}</th></tr>
+        <tr><th> Employee Name : </th> <th>{{ object.name }}</th></tr>
+        <tr><th> Employee Designation : </th> <th>{{ object.designation }}</th></tr>
+        <tr><th> Employee Contact : </th> <th>{{ object.contact }}</th></tr>
+        <tr><th> Employee Photo : </th> <th><img src="{{ object.photo.url }}" width="250" height="300"></th></tr>
+    </table>
+
+{% endblock %}

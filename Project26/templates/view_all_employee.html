@@ -1,0 +1,53 @@
+{% include 'common.html' %}
+
+{% block content %}
+    {% load static %}
+
+    <table class="table">
+        <tr>
+            <th colspan="5" style="font-size: 35px;font-family: 'Agency FB';text-align: center">
+                All Employees Information
+            </th>
+        </tr>
+
+        <tr>
+            <th> Employee IDNO </th>
+            <th> Employee Name </th>
+{#            <th> Employee Designation </th>#}
+            <th> Employee Contact </th>
+{#            <th> Employee Photo </th>#}
+        </tr>
+
+{#        {% for object in object_list %}#}
+{#            <tr>#}
+{#                <th>#}
+{#                    <a href="{% url 'view_one_employee' object.idno %}">#}
+{#                        {{ object.idno }}#}
+{#                    </a>#}
+{#                </th>#}
+{##}
+{##}
+{#                <th>{{ object.name }}</th>#}
+{#                <th>{{ object.designation }}</th>#}
+{#                <th>{{ object.contact }}</th>#}
+{#                <th>#}
+{#                    <img src="{{ object.photo.url }}" width="80" height="80">#}
+{#                </th>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+
+
+        {% for object in object_list %}
+            <tr>
+                <th>
+                    <a href="{% url 'view_one_employee' object.idno %}">
+                        {{ object.idno }}
+                    </a>
+                </th>
+                <th>{{ object.name }}</th>
+                <th>{{ object.contact }}</th>
+            </tr>
+        {% endfor %}
+
+    </table>
+{% endblock %}

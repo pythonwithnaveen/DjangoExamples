@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
-from django.views.generic import CreateView,ListView,DetailView
+from django.views.generic import CreateView,ListView,DetailView,UpdateView,DeleteView
 
 from app26.models import EmployeeModel
 
@@ -26,3 +26,16 @@ class ViewAllEmployees(ListView):
 class ViewOneEmployee(DetailView):
     template_name = 'view_one_employee.html'
     model = EmployeeModel
+
+
+class UpdateEmployee(UpdateView):
+    template_name = 'update_employee.html'
+    model = EmployeeModel
+    fields = "__all__"
+    success_url = '/view_all_employees/'
+
+
+class DeleteEmployee(DeleteView):
+    template_name = 'delete_employee.html'
+    model = EmployeeModel
+    success_url = '/view_all_employees/'

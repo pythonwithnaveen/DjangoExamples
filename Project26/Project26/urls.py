@@ -36,6 +36,10 @@ urlpatterns = [
 
     path('view_one_employee/<int:pk>/',views.ViewOneEmployee.as_view(),name='view_one_employee'),
 
+    path('update_employee/<int:pk>/',views.UpdateEmployee.as_view(),name='update_employee'),
+
+    path('delete_employee/<int:pk>/',views.DeleteEmployee.as_view(),name='delete_employee'),
+
 ]
 
 if settings.DEBUG:

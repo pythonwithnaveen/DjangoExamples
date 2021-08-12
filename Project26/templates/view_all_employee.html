@@ -16,6 +16,8 @@
 {#            <th> Employee Designation </th>#}
             <th> Employee Contact </th>
 {#            <th> Employee Photo </th>#}
+            <th> Update Contact </th>
+            <th> Delete Contact </th>
         </tr>
 
 {#        {% for object in object_list %}#}
@@ -46,6 +48,16 @@
                 </th>
                 <th>{{ object.name }}</th>
                 <th>{{ object.contact }}</th>
+                <th>
+                    <a href="{% url 'update_employee' object.idno %}">
+                        Yes
+                    </a>
+                </th>
+                <th>
+                    <a href="{% url 'delete_employee' object.idno %}">
+                        Yes
+                    </a>
+                </th>
             </tr>
         {% endfor %}
 
